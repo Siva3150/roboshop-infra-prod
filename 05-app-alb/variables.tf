@@ -6,6 +6,12 @@ variable "common_tags" {
   }
 }
 
+variable "tags" {
+  default = {
+    Component = "app-alb"
+  }
+}
+
 variable "project_name" {
   default = "roboshop"
 }
