@@ -9,8 +9,8 @@ pipeline {
         // timeout(time: 1, unit: 'HOURS')
         // disableConcurrentBuilds()
     }
-     //parameters {
-         //choice(name: 'action', choices: ['apply', 'destroy'], description: 'Pick something')
+    parameters {
+        choice(name: 'action', choices: ['apply', 'destroy'], description: 'Pick something')
     }
     // build
     stages {
@@ -85,3 +85,4 @@ pipeline {
             echo 'I will say Hello when pipeline is success'
         }
     }
+}
