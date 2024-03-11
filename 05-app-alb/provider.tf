@@ -7,10 +7,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "sivadevops-state-dev"
+    bucket = "sivadevops-state-prod"
     key    = "app-alb"
     region = "us-east-1"
-    dynamodb_table = "sivadevops-locking-dev"
+    dynamodb_table = "sivadevops-locking-prod"
   }
 }
 
